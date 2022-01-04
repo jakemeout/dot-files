@@ -1,0 +1,59 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+right_format = """$custom"""
+
+# Configure the number of directories to truncate in the current path
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "fg:32"
+
+# [time]
+# disabled = false
+# time_format = "%T"
+
+
+[custom.tztime]
+command = 'date +"%l:%M%p (%Z%z)"'
+when = "true"
+format = '$symbol($output)(white)'
+
+[python]
+symbol = "🐍"
+pyenv_version_name = true
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+# docker
+[docker_context]
+symbol = "🐋 "
+disabled = false
+
+# git
+[git_commit]
+commit_hash_length = 4
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+style = "fg:156" # ANSI colors https://i.stack.imgur.com/KTSQa.png
+
+[git_status]
+conflicted = "⚔️"
+ahead = "⇡ ${count}"
+behind = "⇣ ${count}"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "* ${count}"
+modified = "📝"
+deleted = "🗑"
+staged = "🗃️ ${count}"
+renamed = "📛 ${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[nodejs]
+symbol = " "
+style = "dimmed green"

@@ -1,0 +1,28 @@
+{
+	"version": "1.7.0",
+	"tipsConfig": {
+		"daysLeftBeforeGeneralTip": 5,
+		"firstTimeMinDaysToRemind": 4,
+		"firstTimeMaxDaysToRemind": 6,
+		"minDaysToRemind": 6,
+		"maxDaysToRemind": 10,
+		"daysAfterLastUsage": 30,
+		"allTipsShownFirstly": false,
+		"tips": {
+			"generalTips": {
+				"elementInspector": {},
+				"logCatMonitor": {},
+				"networkInspector": {},
+				"directDebuggingWithHermes": {},
+				"debuggingRNWAndMacOSApps": {},
+				"expoHostType": {},
+				"customEnvVariables": {
+					"shownDate": "2021-10-12T01:16:45.896Z"
+				}
+			},
+			"specificTips": {
+				"networkInspectorLogsColorTheme": {}
+			}
+		}
+	}
+}

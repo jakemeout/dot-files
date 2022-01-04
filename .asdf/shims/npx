@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# asdf-plugin: nodejs 17.2.0
+# asdf-plugin: nodejs 14.18.0
+# asdf-plugin: nodejs 17.0.0
+exec /usr/local/opt/asdf/libexec/bin/asdf exec "npx" "$@"

@@ -1,0 +1,8 @@
+color = ""
+
+[default]
+  device_name = "macbook-pro.lan"
+  live_mode_api_key = "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"
+  live_mode_publishable_key = "pk_live_51HRjLwFVMZF5LB9VlNIz2I4rvFTwzrlPBPS6n6GFCq0OXR01cnMd5fYlfD91YkOcwySKmyAtJC7OMC82nXQCPEMe00PamP0Hzf"
+  test_mode_api_key = "rk_test_51HRjLwFVMZF5LB9VLlFQonJOkGgtSGeZxERBuk71bzSwfy4tWG72UU3ZehZZ3eOHXnScg95eX8qvIflS6ru6zSGe00huB8TbI6"
+  test_mode_publishable_key = "pk_test_51HRjLwFVMZF5LB9VNvATyd16ffbxIT8guyDocDaI2FDbkOKzKSoY0erbTsZJODy0qnFl1lQTIEos6IJF9Bus6DWi00qChjPiVA"

@@ -1,0 +1,74 @@
+{
+  "python.pythonPath": "/usr/local/opt/python@3.9/bin/python3",
+  "python.venvPath": ".venv",
+  "python.linting.flake8Path": "/Users/jakey/.local/bin/flake8",
+  "python.formatting.blackPath": "/Users/jakey/.local/bin/black",
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=160",
+    "--ignore=E402,F841,F401,E302,E305"
+  ],
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.definitionLinkOpensInPeek": true,
+  "[go]": {
+    "editor.insertSpaces": false
+  },
+  "ruby.lint": {},
+  "ruby.intellisense": "rubyLocate",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.iconTheme": "seti",
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.formatOnSave": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.fontLigatures": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default",
+    "*.ipynb": "jupyter-notebook"
+  },
+  "gitlens.codeLens.enabled": true,
+  "gitlens.defaultDateStyle": "absolute",
+  "python.languageServer": "Pylance",
+  "git.autofetch": true,
+  "auto-translate-json.googleApiKey": "AIzaSyB-sDriHm3PiDL4rMDYzgvQSNHI5RJtFCw",
+  "gitlens.advanced.messages": {
+    "suppressImproperWorkspaceCasingWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "git.enableCommitSigning": true,
+  "python.formatting.autopep8Path": "flake8",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.settings.useSplitJSON": true,
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "bracketPairColorizer.depreciation-notice": false
+}

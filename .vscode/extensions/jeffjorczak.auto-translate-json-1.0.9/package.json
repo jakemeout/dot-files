@@ -1,0 +1,95 @@
+{
+	"name": "auto-translate-json",
+	"displayName": "Auto Translate JSON",
+	"description": "Automatically translates JSON language files to other languages using Google Translate",
+	"publisher": "jeffjorczak",
+	"version": "1.0.9",
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"author": {
+		"name": "Jeff Jorczak",
+		"email": "jeff@jorczak.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/codegrue/auto-translate-json"
+	},
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Formatters"
+	],
+	"keywords": [
+		"translate",
+		"language",
+		"json",
+		"flutter"
+	],
+	"main": "./out/extension.js",
+	"activationEvents": [
+		"onCommand:extension.autotranslate"
+	],
+	"contributes": {
+		"configuration": {
+			"title": "Auto Translate JSON",
+			"properties": {
+				"auto-translate-json.sourceLocale": {
+					"type": "string",
+					"default": "en",
+					"markdownDescription": "The local to use for generation from. This prevents accidently clicking the wrong file. Leave blank to process from any file."
+				},
+				"auto-translate-json.googleApiKey": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "Your unique API key for the Google Translation service. Request a key [here](https://console.developers.google.com/apis/library/translate.googleapis.com)\n_Example:ARzaSyAdUwZIyfu7FiDQiAlY5iRjHxvGlNQ3z7Y_"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.autotranslate",
+				"title": "Auto Translate JSON"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "resourceExtname == .json",
+					"command": "extension.autotranslate",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.13.47",
+		"@types/vscode": "^1.54.0",
+		"@typescript-eslint/eslint-plugin": "^2.30.0",
+		"@typescript-eslint/parser": "^2.30.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.9.9",
+		"vscode-test": "^1.5.1"
+	},
+	"dependencies": {
+		"@google-cloud/translate": "^6.1.0"
+	},
+	"__metadata": {
+		"id": "32866420-58da-41dd-9967-c54a5369e5fa",
+		"publisherId": "4b586399-7513-446d-93d3-b1cca2604dfd",
+		"publisherDisplayName": "Jeff Jorczak",
+		"installedTimestamp": 1638756420117
+	}
+}
